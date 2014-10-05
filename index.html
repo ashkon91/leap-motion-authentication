@@ -1,0 +1,25 @@
+        function auth_check(total){
+            if (combination_cnt<=totalcombination){
+                switch (combination_cnt){
+                    case 1:
+                        if (total == 8)
+                            break;
+                        else return;
+                    case 2:
+                        if (total == 1)
+                            break;
+                        else return;
+                    case 3:
+                        if (total == 6)
+                            break;
+                        else return;
+                }
+
+                combination_cnt++;
+                return;
+            }
+            else{
+                alert("Unlocked, Press enter.");
+                authed = 1;
+            }
+        }
